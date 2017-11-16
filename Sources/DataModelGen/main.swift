@@ -27,4 +27,9 @@ let groupCommand = Group { (group) in
   group.addCommand("realm", realmCommand)
 }
 
-groupCommand.run()
+try! groupCommand.run(
+  ["codable",
+   "--datamodel","/Users/allanvialatte/Developer/poissonballon-project/DataModelGen/Exemple/Sample.xcdatamodel",
+   "--output","/Users/allanvialatte/Developer/poissonballon-project/DataModelGen/Exemple/Exemple-Codable/Gen-Exemple-Codable/DataModelGen",
+   ]
+)

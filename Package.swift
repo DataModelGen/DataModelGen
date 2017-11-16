@@ -13,12 +13,15 @@ let package = Package(
     .package(url: "https://github.com/kylef/Commander.git", .upToNextMinor(from:"0.8.0"))
   ],
   targets: [
-    .target(name: "DataModelGen", dependencies: [
-      "DataModelKit",
-      "Rainbow",
-      "Stencil",
-      "PathKit",
-      "Commander"]
+    .target(name: "DataModelGen",
+            dependencies: [
+              "DataModelKit",
+              "Rainbow",
+              "Stencil",
+              "PathKit",
+              "Commander"],
+            path: ".",
+            sources: ["Sources"]
     ),
-  ]
+    ]
 )

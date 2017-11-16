@@ -6,17 +6,17 @@
         "repositoryURL": "https://github.com/kylef/Commander.git",
         "state": {
           "branch": null,
-          "revision": "26a7eeb8bea1a9125e927c665902f54b2c952c7f",
-          "version": "0.7.1"
+          "revision": "e5b50ad7b2e91eeb828393e89b03577b16be7db9",
+          "version": "0.8.0"
         }
       },
       {
         "package": "DataModelKit",
-        "repositoryURL": "git@github.com:PoissonBallon/DataModelKit.git",
+        "repositoryURL": "https://github.com/PoissonBallon/DataModelKit.git",
         "state": {
-          "branch": "master",
-          "revision": "5226424c53328893b678676d6431e8c220670114",
-          "version": null
+          "branch": null,
+          "revision": "368e355457419061bd700adf909a2be05f9ebb6f",
+          "version": "1.0.0"
         }
       },
       {
@@ -30,10 +30,10 @@
       },
       {
         "package": "PathKit",
-        "repositoryURL": "git@github.com:PoissonBallon/PathKit.git",
+        "repositoryURL": "https://github.com/PoissonBallon/PathKit.git",
         "state": {
           "branch": "master",
-          "revision": "0b109bc868e9a12bc5f23e9d61ec937c75900c40",
+          "revision": "a73cc01fe5d5178c5d3154ab454bd02fd971fb54",
           "version": null
         }
       },
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
         "state": {
           "branch": null,
-          "revision": "49dee5d3c448685ca3f511792f5b679423d36475",
-          "version": "4.2.3"
+          "revision": "12496b370363034ccc919e1d72a99b9970b4941e",
+          "version": "4.2.5"
         }
       },
       {
@@ -66,10 +66,10 @@
       },
       {
         "package": "Stencil",
-        "repositoryURL": "git@github.com:PoissonBallon/Stencil.git",
+        "repositoryURL": "https://github.com/PoissonBallon/Stencil.git",
         "state": {
           "branch": "master",
-          "revision": "a0671a9aca30f9cf9d5959d86c31756d8488caac",
+          "revision": "e7984582a6c73637f0076f46e2bcba7e6d5d1ed6",
           "version": null
         }
       }

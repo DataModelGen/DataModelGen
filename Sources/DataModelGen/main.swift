@@ -1,16 +1,30 @@
 import Commander
 import PathKit
 
-let datamodelPathArgument = Option("datamodel", Path.current.absolute().string, flag: "d", description: "The path where .xcdatamodel is")
-let outputPathOption = Option("output", Path.current.absolute().string, flag: "o", description: "The path where file will be generate")
-let templatePathOption = Option("template", Path.current.absolute().string, flag: "t", description: "The template path")
+let dataModelPathArgument = Option("datamodel", default :Path.current.absolute().string, flag: "d", description: "The path where .xcdatamodel is")
+let outputPathOption = Option("output", default: Path.current.absolute().string, flag: "o", description: "The path where file will be generate")
 
-let main = Commander.command(datamodelPathArgument, outputPathOption, templatePathOption) { datamodelPath, outputPath, templatePath in
-  guard let context = Context(from: datamodelPath, output: outputPath) else {
-    return
-  }
-  
+
+
+let codableCommand = command(dataModelPathArgument, outputPathOption) { datamodelPath, outputPath in
+  guard let context = Context(from: datamodelPath, output: outputPath) else { return }
+  context.start()
 }
 
-main.run()
+let vapor3Command = command(dataModelPathArgument, outputPathOption) { datamodelPath, outputPath in
+  guard let context = Context(from: datamodelPath, output: outputPath) else { return }
+  context.start()
+}
 
+let realmCommand = command(dataModelPathArgument, outputPathOption) { datamodelPath, outputPath in
+  guard let context = Context(from: datamodelPath, output: outputPath) else { return }
+  context.start()
+}
+
+let groupCommand = Group { (group) in
+  group.addCommand("codable", codableCommand)
+  group.addCommand("vapor3", vapor3Command)
+  group.addCommand("realm", realmCommand)
+}
+
+groupCommand.run()

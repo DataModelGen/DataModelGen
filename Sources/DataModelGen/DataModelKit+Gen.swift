@@ -11,7 +11,6 @@ import DataModelKit
 extension Attribute {
   // Support `jsonKeyPath` userInfos
   var jsonKeyPath: String? {
-    let jsonKeyPath = self.userInfo.first { return ($0.key == "jsonKeyPath") }
-    return jsonKeyPath?.value
+    return self.userInfos.first { return ($0.key == "jsonKeyPath") }?.value
   }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3956101FBF5E3C00826888 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B39560F1FBF5E3C00826888 /* Template.swift */; };
+		3B3956121FBF6CD200826888 /* DataModelKit+SwiftType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3956111FBF6CD200826888 /* DataModelKit+SwiftType.swift */; };
 		OBJ_135 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_141 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Package.swift */; };
 		OBJ_147 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Package.swift */; };
@@ -190,6 +192,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B39560F1FBF5E3C00826888 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		3B3956111FBF6CD200826888 /* DataModelKit+SwiftType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataModelKit+SwiftType.swift"; sourceTree = "<group>"; };
 		"Commander::Commander::Product" /* Commander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DataModelGen::DataModelGen::Product" /* DataModelGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = DataModelGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DataModelKit::DataModelKit::Product" /* DataModelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,6 +380,8 @@
 				OBJ_12 /* DataModelKit+Gen.swift */,
 				OBJ_13 /* Print.swift */,
 				OBJ_14 /* main.swift */,
+				3B39560F1FBF5E3C00826888 /* Template.swift */,
+				3B3956111FBF6CD200826888 /* DataModelKit+SwiftType.swift */,
 			);
 			path = DataModelGen;
 			sourceTree = "<group>";
@@ -548,7 +554,7 @@
 			path = ".build/checkouts/FileKit.git--4494504688477027967/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -559,7 +565,6 @@
 				OBJ_20 /* Dependencies */,
 				OBJ_121 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -894,7 +899,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_121 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -925,6 +930,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_135 /* Package.swift in Sources */,
+				3B3956101FBF5E3C00826888 /* Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,6 +998,7 @@
 				OBJ_184 /* DataModelKit+Gen.swift in Sources */,
 				OBJ_185 /* Print.swift in Sources */,
 				OBJ_186 /* main.swift in Sources */,
+				3B3956121FBF6CD200826888 /* DataModelKit+SwiftType.swift in Sources */,
 				OBJ_187 /* Codable-Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -377,10 +377,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* Context.swift */,
-				OBJ_12 /* DataModelKit+Gen.swift */,
 				OBJ_13 /* Print.swift */,
 				OBJ_14 /* main.swift */,
 				3B39560F1FBF5E3C00826888 /* Template.swift */,
+				OBJ_12 /* DataModelKit+Gen.swift */,
 				3B3956111FBF6CD200826888 /* DataModelKit+SwiftType.swift */,
 			);
 			path = DataModelGen;

@@ -8,42 +8,28 @@
 import Foundation
 import DataModelKit
 
-
-
-//def to_s
-//items = [
-//  "name=#{@name}",
-//  "type=#{@type}",
-//  "optional=#{@optional}",
-//  "default=#{@default}",
-//  "indexed=#{@indexed}"
-//]
-//"\tAttribute => " + items.join(' | ') + "\n"
-//end
-//
-//def decimal?
-//(@type == :decimal) || (@type == :double) || (@type == :float)
-//end
-//
-//def integer?
-//(@type == :integer_16) || (@type == :integer_32) || (@type == :integer_64)
-//end
-//
-//def number?
-//decimal? || integer?
-//end
-//
-//def bool?
-//@type == :boolean
-//end
-
-extension Attribute {
+extension AttributeType {
   var swiftType: String {
-    switch self.type {
-    case <#pattern#>:
-      <#code#>
-    default:
-      <#code#>
+    switch self {
+    case .undefined, .transformable:
+      return "Any"
+    case .integer16, .integer32, .integer64:
+      return "Int"
+    case .decimal, .double:
+      return "Double"
+    case .float:
+      return "Float"
+    case .string, .uuid:
+      return "String"
+    case .boolean:
+      return "Bool"
+    case .date:
+      return "Date"
+    case .binaryData:
+      return "Data"
+    case .uri:
+      return "URL"
     }
   }
 }
+

@@ -28,6 +28,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ShellOut::ShellOut"
+               BuildableName = "ShellOut.framework"
+               BlueprintName = "ShellOut"
+               ReferencedContainer = "container:DataModelGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Commander::Commander"
                BuildableName = "Commander.framework"
                BlueprintName = "Commander"
